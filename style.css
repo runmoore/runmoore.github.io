@@ -1,0 +1,61 @@
+.app {
+  text-align: center;
+  cursor: default;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.app-header > #logo {
+  border: 3px #fff solid;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  font-size: 39px;
+  font-weight:100;
+  line-height: 100px;
+  letter-spacing: 0.3em;
+  text-indent: 0.3em;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.app-header > .spin {
+  -webkit-animation:spin 60s linear infinite;
+  -moz-animation:spin 60s linear infinite;
+  animation:spin 60s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.app-header {
+  background-color: #444;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+#links {
+  margin-top: 100px;
+}
+
+#links > a {
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  display: inline-block;
+  margin: 10px;
+  border-radius: 50%;
+  color: #fff;
+  text-decoration: none;
+  background-color: #999;
+  font-size: 29px;
+}
+
+#links > a:hover {
+  background-color: #444;
+  color: #fff;
+}
